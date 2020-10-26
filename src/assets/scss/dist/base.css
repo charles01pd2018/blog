@@ -1,0 +1,177 @@
+.navigation {
+  height: 5rem;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.navigation .menu-title {
+  display: flex;
+  align-items: center;
+}
+.navigation .menu-title .menu-title-logo {
+  margin-left: 1rem;
+}
+.navigation .menu-title .menu-title-logo .ant-avatar {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+}
+.navigation .menu-title .menu-title-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.navigation .menu-content {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+.navigation ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 0.5rem 0 1rem;
+}
+.navigation a {
+  padding: 0 2.5rem 0 1rem;
+  font-size: 20px;
+  color: #363636;
+}
+.navigation a:hover {
+  text-decoration: none;
+  color: #2997ff;
+}
+.navigation .ion-ios-menu {
+  font-size: 36px;
+  width: 65px;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .navigation .menu-content {
+    width: calc(100% - 60%);
+    height: calc(100% - 5rem);
+    background: white;
+    position: absolute;
+    top: 5rem;
+    right: 100%;
+    transition: 300ms ease-in;
+  }
+  .navigation .menu-content ul, .navigation .menu-content li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation .menu-content ul {
+    flex-direction: column;
+  }
+  .navigation .menu-content li {
+    height: 3rem;
+  }
+  .navigation .menu-content a {
+    width: 100%;
+  }
+  .navigation .menu-content.active {
+    left: 60%;
+  }
+  .navigation .ion-ios-menu {
+    display: flex;
+  }
+}
+.home h1 {
+  padding-top: 1.5rem;
+  width: 100%;
+  color: black;
+}
+.home .crypto-posts-container, .home .blockchain-posts-container {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.masonry-post {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 100%;
+}
+.masonry-post .image-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.masonry-post .image-title, .masonry-post .image-date, .masonry-post .image-container, .masonry-post div {
+  float: left;
+  width: 100%;
+  z-index: 10;
+  font-weight: 300;
+}
+.masonry-post .image-title {
+  font-size: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+  color: white;
+}
+.masonry-post .image-date {
+  font-size: 18px;
+  color: #363636;
+}
+.masonry-post .tags-container {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  margin-left: -0.1rem;
+  color: white;
+}
+.masonry-post .tags-container .tag {
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  margin-right: 0.2rem;
+}
+
+.masonry {
+  display: grid;
+  grid-gap: 1.3rem;
+}
+
+html body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 4rem 0.5rem;
+}
+
+.overlay::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}

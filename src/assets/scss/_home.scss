@@ -1,0 +1,12 @@
+.home {
+    h1 {
+        padding-top: 1.5rem;
+        width: 100%;
+        color: $blog-section-color;
+    }
+
+    .crypto-posts-container, .blockchain-posts-container {
+        display: flex;
+        padding-bottom: 5rem;
+    }
+}
