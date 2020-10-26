@@ -1,1 +1,1 @@
-# Layout for Blog
+# Layout for blog
