@@ -1,5 +1,5 @@
 import React from 'react';
-import {PostMasonry, MasonryPost} from '../components/common';
+import { PostMasonry, MasonryPost } from '../components/common';
 
 import Crypto from '../assets/mocks/crypto';
 import Blockchain from '../assets/mocks/blockchain';
